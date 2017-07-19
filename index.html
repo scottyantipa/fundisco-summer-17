@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <style>
+      @-webkit-keyframes full-rotation {
+        0%   { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @-moz-keyframes full-rotation {
+        0%   { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @-o-keyframes full-rotation {
+        0%   { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes full-rotation {
+        0%   { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      .record {
+        height: 50%;
+
+        -webkit-animation: full-rotation 5s infinite linear; /* Safari 4+ */
+        -moz-animation:    full-rotation 5s infinite linear; /* Fx 5+ */
+        -o-animation:      full-rotation 5s infinite linear; /* Opera 12+ */
+        animation:         full-rotation 5s infinite linear; /* IE 10+, Fx 29+ */
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <img class="record" src="images/record.jpg" />
+    </div>
+  </body>
+</html>
